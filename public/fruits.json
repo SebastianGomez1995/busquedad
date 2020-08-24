@@ -1,0 +1,52 @@
+[
+    {
+        "fruit": "Apple",
+        "img": "./img/matheus-cenali-wXuzS9xR49M-unsplash.jpg",
+        "imgAuthor": "Matheus Cenali"
+    },
+    {
+        "fruit": "Banana",
+        "img": "./img/giorgio-trovato-fczCr7MdE7U-unsplash.jpg",
+        "imgAuthor": "Giorgio Trovato"  
+    },
+    {
+        "fruit": "Pear",
+        "img": "./img/jess-bailey-VgCDU8K5l_E-unsplash.jpg",
+        "imgAuthor": "Jess Bailey"
+    },
+    {
+        "fruit": "Plum",
+        "img": "./img/alexandra-kikot-mjP6MQz834E-unsplash.jpg",
+        "imgAuthor": "Alexandra Kikot"
+    },
+    {
+        "fruit": "Orange",
+        "img": "./img/xiaolong-wong-nibgG33H0F8-unsplash.jpg",
+        "imgAuthor": "Xiaolong Wong"
+    },
+    {
+        "fruit": "Mango",
+        "img": "./img/becky-mattson-7iLlgS5o09c-unsplash.jpg",
+        "imgAuthor": "Becky Mattson"
+    },
+    {
+        "fruit": "Watermelon",
+        "img": "./img/elena-koycheva-y-feJOQIBao-unsplash.jpg",
+        "imgAuthor": "Elena Koycheva"
+    },
+    {   
+        "fruit": "Strawberry",
+        "img": "./img/isaac-quesada-DYbr5utVs8s-unsplash.jpg",
+        "imgAuthor": "Isaac Quesada"
+    },
+    {
+        "fruit": "Cantaloupe",
+        "img": "./img/isaac-n-c-58l1uegj7YI-unsplash.jpg",
+        "imgAuthor": "Isaac N."
+    },
+    {
+        "fruit": "Raspberry",
+        "img": "./img/zach-inglis-t0A2NCMhXRQ-unsplash.jpg",
+        "imgAuthor": "Zach Inglis"
+    }
+]
