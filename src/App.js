@@ -1,16 +1,22 @@
 import React from 'react';
 import Header from './components/Header';
 import Main from './components/Main';
-import Footer from './components/Footer';
+import Notes from './components/Notes';
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <Header />
-      <Main />
-      <Footer /> 
-    </div>
+    <Router>
+      <div className="App">
+        <Header />
+        <Switch>
+          <Route exact path="/" component={Main} />
+          <Route exact path="/notas" component={Notes} />
+        </Switch>
+      </div>
+    </Router>
   );
 }
 

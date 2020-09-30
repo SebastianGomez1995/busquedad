@@ -1,11 +1,9 @@
-import React, { Component } from 'react'
+import React from 'react'
 
-export default class Description extends Component {
-    render() {
-        return (        
-            <div>
-                <h1>{this.props.fruit}</h1>
-            </div>
-        )
-    }
+export default function Description (props) {
+    return (        
+        <div>
+            <h1>{props.fruit}</h1>
+        </div>
+    )
 }

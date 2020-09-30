@@ -1,12 +1,11 @@
-import React, { Component } from 'react';
+import React from 'react';
 import Description from './Description';
 import Photo from './Photo';
 
-export default class Fruit extends Component {
-    render() {
+export default function Fruit(props) {
         return (
             <>
-            {this.props.data.map((e) => {
+            {props.data.map((e) => {
                 return(
                     <div>
                         <Photo img={e.img} author={e.imgAuthor} />
@@ -16,5 +15,4 @@ export default class Fruit extends Component {
                 })}
             </>
         )
-    }
 }

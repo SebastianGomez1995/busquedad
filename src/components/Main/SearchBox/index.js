@@ -1,30 +1,18 @@
-import React, { Component } from 'react'
+import React from 'react'
 
-export default class SearchBox extends Component {
-
-    state={
-        value: ""
-    }
-
-    handleSubmit = (event) =>{
+export default function SearchBox (props){
+    const handleSubmit = (event) =>{
         event.preventDefault()
-        
-        console.log(this.props.data)
-        const filteredData = this.props.data.filter((e) => {
+        const filteredData = props.data.filter((e) => {
             return e.fruit === event.target.value
         })
-
-        return this.props.filter(filteredData)
+        return props.filterAction(filteredData)
     }
-
-    render() {
         return (
             <div>
-                
-                    <input 
-                        onChange={(e) => this.handleSubmit(e)}
-                    />
+                <input 
+                    onChange={(e) => handleSubmit(e)}
+                />
             </div>
         )
-    }
 }

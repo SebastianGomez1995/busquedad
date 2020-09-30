@@ -1,12 +1,28 @@
 .App-header{
-  background-color: #ff3a3a;
-  color: white;
+  background-color: #242A31;
+  display: flex;
 }
 
 .App-header h1 {
   font-size: 24px;
   font-family: Helvetica;
   margin: 0;
-  text-align: center;
+  color: white;
+  align-self: center;
 }
 
+.App-header ul {
+  display: flex;
+}
+
+.App-header ul li{
+  color: white;
+  list-style: none;
+  flex: 1;
+  margin: .3em;
+}
+
+.App-header ul li a{
+  color: white;
+  text-decoration: none;
+}

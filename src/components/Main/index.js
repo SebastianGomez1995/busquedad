@@ -1,37 +1,33 @@
-import React, { Component } from 'react'
+import React, { useState, useEffect } from 'react'
 import Fruit from './Fruit';
 import SearchBox from './SearchBox';
 
-export default class Main extends Component {
+export default function Main () {
+    const [data, setData] = useState([])
+    const [filteredData, setFilteredData] = useState([])
+    const [hasError, setErrors] = useState(false)
 
-    state={
-        data: [],
-        filteredData: []
+    useEffect(() => {
+        async function fetchData(){
+            const res = await fetch('./fruits.json')
+            res.json()
+            .then(data =>  setData(data))    
+            .catch(err => setErrors(err))
+        }
+        fetchData();
+    })
+
+    const lookForAFruit = (text) => {
+           return setFilteredData(text)
     }
 
-    componentDidMount(){
-        fetch('./fruits.json')
-            .then((res) => res.json())
-            .then((data) => {
-                this.setState({
-                    data
-            })
-        })
-    }
-
-    lookForAFruit = (text) => {
-        this.setState({
-            ...this.state,
-            filteredData: text
-        })
-    }
-
-    render() {
-        return (
-            <div>
-                <SearchBox data={this.state.data} filter={this.lookForAFruit}/>
-                <Fruit data={this.state.filteredData.length !== 0 ? this.state.filteredData : this.state.data} />
-            </div>
-        )
-    }
+    return (
+        <div>
+            <SearchBox data={data} filterAction={lookForAFruit}/>
+            <Fruit data={filteredData.length !== 0 ? filteredData : data} />
+            <span>¿Hubo errores? {hasError ? hasError : "No"}</span>
+        </div>
+    )
 }
+
+
