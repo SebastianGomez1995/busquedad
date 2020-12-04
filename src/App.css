@@ -1,28 +1,139 @@
+body{
+  font-family: 'Montserrat', sans-serif;
+}
+
+
 .App-header{
-  background-color: #242A31;
-  display: flex;
+  background-color: #2086ff;
+  text-align: center;
 }
 
 .App-header h1 {
-  font-size: 24px;
-  font-family: Helvetica;
-  margin: 0;
+  font-size: 1.5em;
+    font-family: Helvetica;
+    margin: 0;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 2em;
+    padding-top: 1em;
+}
+
+.App-header p {
   color: white;
-  align-self: center;
+  font-size: .8em;
+  margin-top: 0;
+  margin-bottom: 2em;
+}
+
+.App-header p a {
+  color: white;
 }
 
 .App-header ul {
   display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background: #def3ff;
+    height: 3em;
+    align-items: center;
+    padding-inline-start: 0;
+    margin: 0;
 }
 
 .App-header ul li{
   color: white;
   list-style: none;
-  flex: 1;
-  margin: .3em;
+  margin: 0;
+  font-size: 1em;
 }
 
 .App-header ul li a{
-  color: white;
-  text-decoration: none;
+  color: #676767;
+    text-decoration: none;
 }
+
+
+
+#Contenido .SearchBox {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 1em 0 1em 0;
+}
+
+#Contenido .SearchBox form input{
+  height: 1.9em;
+  border: 1px solid gray;
+  border-radius: 7px;
+  padding: 0 1em 0;
+  margin: 0 1em 0;
+}
+
+#Contenido .SearchBox form button {
+  font-size: .9em;
+  border: 1px solid gray;
+  border-radius: 9px;
+  padding: 0em 1em 0em;
+  height: 2em;
+}
+
+#Frutas .Fruta {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 2em 0;
+}
+
+#Frutas .Fruta .Foto figure {
+  margin: 0
+}
+
+#Frutas .Fruta .Foto figure img{
+  width: 100px;
+  height: auto;
+}
+
+#Frutas .Fruta .Descripcion {
+  display: flex;
+  flex-direction: column;
+  margin: 0 1em;
+  width: 10em;
+}
+
+#Frutas .Fruta .Descripcion h1 {
+  margin: 0;
+  font-size: 1em;
+}
+
+#Frutas .Fruta .Descripcion p {
+  font-size: .8em;
+}
+
+#Frutas .Fruta .Descripcion p.Autor {  
+  margin: 0
+}
+
+
+.Notas { 
+  margin: 0 10%;
+}
+
+.Notas h2 {
+  margin: 2em 0 0;
+}
+
+.Notas p {
+  line-height: 2em;
+}
+
+.Notas ul {
+  list-style: square;
+}
+
+.Notas ul li {
+  margin-bottom: .75em;
+}
+

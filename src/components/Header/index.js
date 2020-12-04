@@ -5,12 +5,13 @@ export default function Header() {
     return (
         <header className="App-header">
             <h1>Catálogo de Frutas</h1>
+            <p>Fundamentos de React Hooks<span> - @<a href="https://twitter.com/@mikenieva">mikenieva</a></span></p>
             <ul>
                 <li>
-                    <Link to="/">Inicio</Link>
+                    <Link to="/"><u>Inicio</u></Link>
                 </li>
                 <li>
-                    <Link to="/notas">Notas</Link>
+                    <Link to="/notas"><u>Notas</u></Link>
                 </li>
             </ul>
             
