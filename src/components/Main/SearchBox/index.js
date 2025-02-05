@@ -1,23 +1,24 @@
-import React from 'react'
+import React from "react";
 
-export default function SearchBox (props){
-    const handleSubmit = (event) =>{
-        event.preventDefault()
-        const result = props.data.filter((e) => {
-            const fruit = e.fruit.toUpperCase()
-            const searchingFruit = event.target.value.toUpperCase()
-            return fruit === searchingFruit
-        })
-        return props.filterAction(result)
-    }
-        return (
-            <div className="SearchBox">
-                <form>
-                    <input 
-                        onChange={(e) => handleSubmit(e)}
-                        placeholder="Escribe tu fruta..."
-                    />
-                </form>
-            </div>
-        )
+export default function SearchBox(props) {
+
+    //funcion que filtra los datos segun el text del input
+    const handleSearch = (event) => {
+        const searchingFruit = event.target.value.toUpperCase();
+
+        const result = props.data.filter(e => 
+            e.fruit.toUpperCase().includes(searchingFruit) 
+        );
+        props.filterAction(result); 
+    };
+
+    return (
+        <div className="SearchBox">
+            <input 
+                type="text"
+                onChange={handleSearch}
+                placeholder="Escribe tu fruta..."
+            />
+        </div>
+    );
 }
