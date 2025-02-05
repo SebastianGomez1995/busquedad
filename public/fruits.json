@@ -1,0 +1,50 @@
+[
+    {
+        "fruit": "Manzana",
+        "color": "Roja",
+        "img": "./img/matheus-cenali-wXuzS9xR49M-unsplash.jpg",
+        "imgAuthor": "Matheus Cenali"
+    },
+    {
+        "fruit": "Banano",
+        "color": "Amarillo",
+        "img": "./img/giorgio-trovato-fczCr7MdE7U-unsplash.jpg",
+        "imgAuthor": "Giorgio Trovato"  
+    },
+    {
+        "fruit": "Pera",
+        "color": "Verde",
+        "img": "./img/jess-bailey-VgCDU8K5l_E-unsplash.jpg",
+        "imgAuthor": "Jess Bailey"
+    },
+    {
+        "fruit": "Ciruela",
+        "color": "Morado",
+        "img": "./img/alexandra-kikot-mjP6MQz834E-unsplash.jpg",
+        "imgAuthor": "Alexandra Kikot"
+    },
+    {
+        "fruit": "Naranja",
+        "color": "Naranja",
+        "img": "./img/xiaolong-wong-nibgG33H0F8-unsplash.jpg",
+        "imgAuthor": "Xiaolong Wong"
+    },
+    {
+        "fruit": "Mango",
+        "color": "Amarillo",
+        "img": "./img/becky-mattson-7iLlgS5o09c-unsplash.jpg",
+        "imgAuthor": "Becky Mattson"
+    },
+    {   
+        "fruit": "Fresa",
+        "color": "Roja",
+        "img": "./img/isaac-quesada-DYbr5utVs8s-unsplash.jpg",
+        "imgAuthor": "Isaac Quesada"
+    },
+    {
+        "fruit": "Frambuesa",
+        "color": "Roja",
+        "img": "./img/zach-inglis-t0A2NCMhXRQ-unsplash.jpg",
+        "imgAuthor": "Zach Inglis"
+    }
+]

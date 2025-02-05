@@ -1,0 +1,82 @@
+body{
+  font-family: 'Montserrat', sans-serif;
+}
+
+.App-header{
+  background-color: #00224c;
+  text-align: center;
+  align-items: center;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+.App-header h1 {
+  font-size: 1.5em;
+    font-family: Helvetica;
+    margin: 0;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 2em;
+}
+
+#Contenido .SearchBox {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 1em 0 1em 0;
+}
+
+#Contenido .SearchBox form input{
+  height: 1.9em;
+  border: 1px solid gray;
+  border-radius: 7px;
+  padding: 0 1em 0;
+  margin: 0 1em 0;
+}
+
+#Contenido .SearchBox form button {
+  font-size: .9em;
+  border: 1px solid gray;
+  border-radius: 9px;
+  padding: 0em 1em 0em;
+  height: 2em;
+}
+
+#Frutas .Fruta {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 2em 0;
+}
+
+#Frutas .Fruta .Foto figure {
+  margin: 0
+}
+
+#Frutas .Fruta .Foto figure img{
+  width: 100px;
+  height: auto;
+}
+
+#Frutas .Fruta .Descripcion {
+  display: flex;
+  flex-direction: column;
+  margin: 0 1em;
+  width: 10em;
+}
+
+#Frutas .Fruta .Descripcion h1 {
+  margin: 0;
+  font-size: 1em;
+}
+
+#Frutas .Fruta .Descripcion p {
+  font-size: .8em;
+}
+
+#Frutas .Fruta .Descripcion p.Autor {  
+  margin: 0
+}
